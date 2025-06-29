@@ -30,13 +30,11 @@
             padding: 40px 20px;
             background: #f9f9f9;
             color: black;
+            flex-direction: column;
         }
-        .media-section img {
-            max-width: 400px;
-            border-radius: 10px;
-        }
+        .media-section img,
         .media-section video {
-            max-width: 400px;
+            max-width: 750px;
             border-radius: 10px;
         }
         .arrow {
@@ -76,6 +74,20 @@
             margin-top: 40px;
             padding-left: 20px;
         }
+        .accent-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .accent-list li::before {
+            content: "|";
+            color: #4285f4;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .accent-list li {
+            margin-bottom: 8px;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -84,13 +96,8 @@
         <p>Transform any image into stunning animated video using AI.</p>
     </div>
     <div class="media-section">
-        <img src="Louisiana.png" alt="Louisiana Crawfish Lady" style="max-width: 600px;"/>
-        <div class="arrow">➡️</div>
-        <video controls style="max-width: 600px;">
-            <source src="Louisiana.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+        <img src="Louisiana.png" alt="Louisiana Crawfish Lady" />
+        <div class="arrow">⬇️</div>
         <video controls>
             <source src="Louisiana.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -98,14 +105,15 @@
     </div>
 
     <div class="content-section">
-        <br>
-        <h2>Sign Up for Kling AI</h2>
+        <h2 style="text-align: center;">Sign Up for Kling AI</h2>
         <div class="button-container">
             <a href="https://klingaiaffiliate.pxf.io/K0WbXN" target="_blank" class="cta-button">Sign Up</a>
         </div>
         <br>
-        <p style="text-align: center;">Use code <strong>7BECYNP7HCF2</strong> to get <strong>50% more credits</strong> your first month!</p>
-        <p style="text-align: center;">Plans start as just $79 per year or $7 per month!</p>
+        <ul class="accent-list">
+            <li style="text-align: left;">Use code <strong>7BECYNP7HCF2</strong> to get <strong>50% more credits</strong> your first month!</li>
+            <li style="text-align: left;">Plans start as just $79 per year or $7 per month!</li>
+        </ul>
 
         <h2 class="indent">How to Create Images and Animate Them with Kling!</h2>
         <div class="youtube-section">
