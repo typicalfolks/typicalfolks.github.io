@@ -14,7 +14,7 @@
         }
         .hero {
             text-align: center;
-            padding: 0 20px 20px 20px;
+            padding: 40px 20px 20px 20px;
         }
         .hero h1 {
             font-size: 2.5em;
@@ -24,32 +24,33 @@
         }
         .media-section {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 40px;
             padding: 40px 20px;
             background: #f9f9f9;
             color: black;
         }
-        .media-section img,
-        .media-section .gif {
-            max-width: 122px;
+        .media-section img {
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .media-section video {
+            max-width: 400px;
             border-radius: 10px;
         }
         .arrow {
-            font-size: 2.5em;
+            font-size: 3em;
         }
         .content-section {
             background: #fff;
             color: #000;
-            padding: 10px 20px 40px 20px;
+            padding: 40px 20px;
             max-width: 800px;
             margin: 0 auto;
-            text-align: center;
         }
         .content-section h2 {
-            margin-top: 40px;
+            margin-top: 0;
         }
         .youtube-section iframe {
             width: 100%;
@@ -71,26 +72,62 @@
             cursor: pointer;
             text-decoration: none;
         }
+        .content-section h2.indent {
+            margin-top: 40px;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="hero">
         <h1>Bring Images to Life with Kling AI</h1>
         <p>Transform any image into stunning animated video using AI.</p>
-        <div class="media-section">
-            <img src="Louisiana.png" alt="Louisiana Crawfish Lady" class="gif"/>
-            <div class="arrow">⬇️</div>
-            <img src="Louisiana.gif" alt="Animated Louisiana Crawfish Lady" class="gif"/>
-        </div>
+    </div>
+    <div class="media-section">
+        <img src="Louisiana.png" alt="Louisiana Crawfish Lady" style="max-width: 600px;"/>
+        <div class="arrow">➡️</div>
+        <video controls style="max-width: 600px;">
+            <source src="Louisiana.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+        <video controls>
+            <source src="Louisiana.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <div class="content-section">
+        <br>
         <h2>Sign Up for Kling AI</h2>
         <div class="button-container">
             <a href="https://klingaiaffiliate.pxf.io/K0WbXN" target="_blank" class="cta-button">Sign Up</a>
         </div>
-        <p><strong>Use code <code>7BECYNP7HCF2</code></strong> to get <strong>50% more credits</strong> your first month!</p>
-        <p>Plans start as just $79 per year or $7 per month!</p>
+        <br>
+        <p style="text-align: center;">Use code <strong>7BECYNP7HCF2</strong> to get <strong>50% more credits</strong> your first month!</p>
+        <p style="text-align: center;">Plans start as just $79 per year or $7 per month!</p>
+
+        <h2 class="indent">How to Create Images and Animate Them with Kling!</h2>
+        <div class="youtube-section">
+            <iframe src="https://www.youtube.com/embed/17YPqat8aDE" allowfullscreen></iframe>
+        </div>
+
+        <h2 class="indent">In-Depth Kling AI Tutorial</h2>
+        <div class="youtube-section">
+            <iframe src="https://www.youtube.com/embed/FWAP4m0-zt8" allowfullscreen></iframe>
+        </div>
+
+        <h2 class="indent">Why Use Kling AI?</h2>
+        <ul>
+            <li>✨ No animation skills needed</li>
+            <li>🖼️ Works with portraits, illustrations, and concept art</li>
+            <li>🚀 Fast rendering with lifelike motion</li>
+            <li>🎯 Perfect for content creators, educators, and marketers</li>
+        </ul>
+
+        <div class="button-container">
+            <a href="https://klingaiaffiliate.pxf.io/K0WbXN" target="_blank" class="cta-button">Try Kling AI Now</a>
+        </div>
     </div>
 </body>
 </html>
