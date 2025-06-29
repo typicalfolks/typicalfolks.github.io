@@ -22,26 +22,31 @@
         .hero p {
             font-size: 1.2em;
         }
-        .media-section {
+        .media-section-wrapper {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             gap: 20px;
             padding: 40px 20px;
             background: #f9f9f9;
             color: black;
-            flex-direction: column;
-            max-width: 800px;
+            flex-wrap: wrap;
+            max-width: 1200px;
             margin: 0 auto;
         }
+        .media-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
         .media-section img,
-        .media-section video,
         .media-section .gif {
-            max-width: 140.625px;
+            width: 105px;
             border-radius: 10px;
         }
         .arrow {
-            font-size: 3em;
+            font-size: 2.5em;
         }
         .content-section {
             background: #fff;
@@ -63,7 +68,7 @@
         }
         .signup-title {
             display: flex;
-            align-items: end;
+            align-items: flex-end;
             justify-content: center;
             gap: 10px;
         }
@@ -114,10 +119,23 @@
         <h1>Bring Images to Life with Kling AI</h1>
         <p>Transform any image into stunning animated video using AI.</p>
     </div>
-    <div class="media-section">
-        <img src="Louisiana.png" alt="Louisiana Crawfish Lady" />
-        <div class="arrow">⬇️</div>
-        <img class="gif" src="Louisiana.gif" alt="Louisiana Crawfish Lady Animation" />
+
+    <div class="media-section-wrapper">
+        <div class="media-section">
+            <img src="Alabama.png" alt="Man in Red Hoodie" />
+            <div class="arrow">⬇️</div>
+            <img class="gif" src="Dad 2.gif" alt="Man in Red Hoodie Animation" />
+        </div>
+        <div class="media-section">
+            <img src="Louisiana.png" alt="Louisiana Crawfish Lady" />
+            <div class="arrow">⬇️</div>
+            <img class="gif" src="Louisiana.gif" alt="Louisiana Crawfish Lady Animation" />
+        </div>
+        <div class="media-section">
+            <img src="magnifics_upscale-PDeImcHCl1h0KC0q8Xxt-Indiana.png" alt="Man in Blue Shirt" />
+            <div class="arrow">⬇️</div>
+            <img class="gif" src="Dad 1.gif" alt="Man in Blue Shirt Animation" />
+        </div>
     </div>
 
     <div class="signup-section">
