@@ -33,8 +33,9 @@
             flex-direction: column;
         }
         .media-section img,
-        .media-section video {
-            max-width: 750px;
+        .media-section video,
+        .media-section .gif {
+            max-width: 562.5px; /* 750px - 25% */
             border-radius: 10px;
         }
         .arrow {
@@ -75,14 +76,8 @@
             padding-left: 20px;
         }
         .accent-list {
-            list-style: none;
-            padding-left: 20px;
-        }
-        .accent-list li::before {
-            content: "|";
-            color: #4285f4;
-            font-weight: bold;
-            margin-right: 10px;
+            list-style: disc;
+            padding-left: 40px;
         }
         .accent-list li {
             margin-bottom: 8px;
@@ -98,10 +93,7 @@
     <div class="media-section">
         <img src="Louisiana.png" alt="Louisiana Crawfish Lady" />
         <div class="arrow">⬇️</div>
-        <video controls>
-            <source src="Louisiana.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <img class="gif" src="Louisiana.gif" alt="Louisiana Crawfish Lady Animation" />
     </div>
 
     <div class="content-section">
@@ -111,8 +103,8 @@
         </div>
         <br>
         <ul class="accent-list">
-            <li style="text-align: left;">Use code <strong>7BECYNP7HCF2</strong> to get <strong>50% more credits</strong> your first month!</li>
-            <li style="text-align: left;">Plans start as just $79 per year or $7 per month!</li>
+            <li>Use code <strong>7BECYNP7HCF2</strong> to get <strong>50% more credits</strong> your first month!</li>
+            <li>Plans start as just $79 per year or $7 per month!</li>
         </ul>
 
         <h2 class="indent">How to Create Images and Animate Them with Kling!</h2>
