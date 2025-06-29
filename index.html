@@ -105,16 +105,22 @@
             margin-top: 25px;
             padding-left: 20px;
         }
-        .accent-list {
-            list-style: disc;
-            padding-left: 40px;
-        }
-        .accent-list li {
-            margin-bottom: 4px;
-            text-align: left;
-        }
         .centered-title {
             text-align: center;
+        }
+        .feature-list {
+            padding-left: 0;
+            list-style: none;
+        }
+        .feature-list li {
+            margin-bottom: 20px;
+        }
+        .feature-list strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .feature-description {
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -170,12 +176,37 @@
 
         <br>
         <h2 class="indent centered-title">Why Use Kling AI?</h2>
-        <ul>
-          <li><strong>🖌️ Custom AI Image Generation:</strong><br>Generate AI images using your own detailed custom prompts with Kling’s powerful model options.</li>
-          <li><strong>📸 Animate Any Image:</strong><br>Animate real photos or AI-generated images, turning them into dynamic, expressive videos.</li>
-          <li><strong>🎧 Realistic Sound Effects:</strong><br>Add lifelike, automatically synced sound effects to your animations for enhanced realism.</li>
-          <li><strong>🗣️ Custom Voice Integration:</strong><br>Make animated characters speak using your own uploaded audio files or custom-generated voices.</li>
-          <li><strong>👕 Virtual Try-On Tools:</strong><br>Upload or create custom models and virtually try on any clothing you upload to visualize how it looks in motion.</li>
+        <ul class="feature-list">
+            <li>
+                <strong>🖌️ Custom AI Image Generation:</strong>
+                <div class="feature-description">
+                    Generate AI images using your own detailed custom prompts with Kling’s powerful model options.
+                </div>
+            </li>
+            <li>
+                <strong>📸 Animate Any Image:</strong>
+                <div class="feature-description">
+                    Animate real photos or AI-generated images, turning them into dynamic, expressive videos.
+                </div>
+            </li>
+            <li>
+                <strong>🎧 Realistic Sound Effects:</strong>
+                <div class="feature-description">
+                    Add lifelike, automatically synced sound effects to your animations for enhanced realism.
+                </div>
+            </li>
+            <li>
+                <strong>🗣️ Custom Voice Integration:</strong>
+                <div class="feature-description">
+                    Make animated characters speak using your own uploaded audio files or custom-generated voices.
+                </div>
+            </li>
+            <li>
+                <strong>👕 Virtual Try-On Tools:</strong>
+                <div class="feature-description">
+                    Upload or create custom models and virtually try on any clothing you upload to visualize how it looks in motion.
+                </div>
+            </li>
         </ul>
 
         <div class="button-container">
